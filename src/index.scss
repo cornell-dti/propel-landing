@@ -1,0 +1,51 @@
+// All Css Here
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "../public/assets/css/plugins.css";
+@import "../public/assets/scss/style";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+
+#rocket{
+  transform: translateY(750px);
+  animation: launch 2s ease-out forwards;
+}
+
+@keyframes launch {
+  from {
+      transform: translateY(750px);
+  }
+  to{
+      perspective: 500px;
+      transform: translateY(0px); 
+  }
+}
+#stars {
+  animation: twinkling 2s linear ;
+}
+@keyframes twinkling {
+
+  from{
+      transform: scale(0);
+  }
+  to{
+      transform: scale(1);
+  }
+}
+.text{
+  opacity: 0;
+  animation:appear 1s ease-in forwards;
+  animation-delay: 1.8s;
+}
+@keyframes appear {
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
+a{
+  color:#F66947;
+  text-decoration: none;
+}
