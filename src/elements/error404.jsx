@@ -9,7 +9,7 @@ import Footer from "../component/footer/FooterTwo";
     render() {
         return (
             <>
-                <Header headerPosition="header--transparent" color="color-white" logo="logo-light" />
+                {/* <Header headerPosition="header--transparent" color="color-white" logo="logo-light" /> */}
                 {/* Start Page Error  */}
                 <div className="error-page-inner bg_color--4">
                     <div className="container">
