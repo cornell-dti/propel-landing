@@ -5,17 +5,17 @@ const ServiceList = [
     {
         icon: <FaStickyNote />,
         title: 'Ideation',
-        description: 'Students can be excited and driven, but apprehensive and lost. Propel aid students in bringing ideas to reality and creating a solution.'
+        description: 'We know you have great ideas! We want to help you find the best ones through user and market research.'
     },
     {
         icon: <FaWrench />,
-        title: 'Build',
-        description: 'Students are often surrounded by ambitious peers who turn their projects into tech start-ups and entrepreneurship endeavors. Propel forster students in taking their crucial steps.'
+        title: 'Building',
+        description: 'Creating a scalable product can be hard sometimes. We will provide you with the resources and assistance to help make it happen.'
     },
     {
         icon: <FaRocket />,
         title: 'Launch',
-        description: 'Launch plans are Propel assist students in pitching ideas to industry experts, entrepreneurs, professors, mentors, and project team leads.'
+        description: 'We want to provide you with the opportunity to pitch to industry experts, entrepreneurs, professors, mentors, and project team leads.'
     },
 ]
 

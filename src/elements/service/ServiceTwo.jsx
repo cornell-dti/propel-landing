@@ -15,12 +15,12 @@ const ServiceList = [
     {
         icon: <FcPodiumWithAudience />,
         title: 'Networking Opportunities',
-        description: 'Propelians will have access to contacts from our monthly industry speakers and project feedback from experts specialized in product development.'
+        description: 'Propellians will have access to contacts from our monthly industry speakers and project feedback from experts specialized in product development.'
     },
     {
         icon: <FcDocument />,
-        title: 'Resources',
-        description: 'Propelians will be given access to DTI resources and organized contents from our past product management courses.'
+        title: 'Credits',
+        description: 'Each Propellian has the option to receive 2 credits s/u as INFO 1998 for being a part of the program.'
     }
 ]
 

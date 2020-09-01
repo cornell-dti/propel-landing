@@ -60,7 +60,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2020 Cornell DTI. All Rights Reserved.</p>
+                                                <p>Copyright © 2020 Cornell DTI. All Rights Reserved. The word 'Propellian' is licensed from Little Fu Co.</p>
                                             </div>
                                         </div>
                                     </div>
