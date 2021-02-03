@@ -16,9 +16,9 @@ class Footer extends Component{
                             <div className="col-lg-6">
                                 <div className="footer-left">
                                     <div className="inner">
-                                        <span>Deadline: September 21</span>
+                                        <span>Deadline: Feb 21 at 11:59 PM</span>
                                         <h2>Become a <br /> Propellian</h2>
-                                        <a className="rn-button-style--2" href="https://dtipropel.typeform.com/to/EH3VYb56">
+                                        <a className="rn-button-style--2" href="https://form.typeform.com/to/rfHgzqHz">
                                             <span>Apply Now</span>
                                         </a>
                                     </div>
@@ -33,7 +33,7 @@ class Footer extends Component{
                                                 <h4>Quick Link</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="https://www.cornelldti.org/" target="_blank" rel="noopener noreferrer">Cornell DTI</a></li>
-                                                    <li><a href="https://dtipropel.typeform.com/to/EH3VYb56" target="_blank" rel="noopener noreferrer">Applications</a></li>
+                                                    <li><a href="https://form.typeform.com/to/rfHgzqHz" target="_blank" rel="noopener noreferrer">Applications</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -44,7 +44,7 @@ class Footer extends Component{
                                                 <h4>Say Hello</h4>
                                                 <ul className="ft-link">
                                                     <li><a href="mailto:hello@cornelldti.org" target="_blank" rel="noopener noreferrer">Contact Cornell DTI</a></li>
-                                                    <li><a href="mailto:yy596@cornell.edu" target="_blank" rel="noopener noreferrer">Contact Program Manager</a></li>
+                                                    <li><a href="mailto:hyw2@cornell.edu" target="_blank" rel="noopener noreferrer">Contact Program Manager</a></li>
                                                 </ul>
 
                                                 <div className="social-share-inner">
@@ -60,7 +60,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2020 Cornell DTI. All Rights Reserved. The word 'Propellian' is licensed from Little Fu Co.</p>
+                                                <p>Copyright © 2021 Cornell DTI. All Rights Reserved. The word 'Propellian' is licensed from Little Fu Co.</p>
                                             </div>
                                         </div>
                                     </div>

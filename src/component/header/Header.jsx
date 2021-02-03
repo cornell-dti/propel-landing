@@ -126,8 +126,8 @@ class Header extends Component{
                     <div className="header-right">
                         {navLinks}
                         <div className="header-btn">
-                            <a className="rn-btn" href="https://dtipropel.typeform.com/to/EH3VYb56">
-                                <span>Apply for the F20 cohort</span>
+                            <a className="rn-btn" href="https://form.typeform.com/to/rfHgzqHz">
+                                <span>Apply for the S21 cohort</span>
                             </a>
                         </div>
                         {/* Start Humberger Menu  */}
