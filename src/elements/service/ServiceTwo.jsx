@@ -5,7 +5,7 @@ const ServiceList = [
     {
         icon: <FcMoneyTransfer />,
         title: 'Funding',
-        description: 'Propel will provide each team with $150 in reimbursements towards expenses in building your product.'
+        description: 'Propel will provide each team with $250 in reimbursements towards expenses in building your product.'
     },
     {
         icon: <FcCollaboration />,
@@ -36,7 +36,7 @@ class ServiceTwo extends Component{
                             <h2 className="title">{title}</h2>
                             <p>{description}</p>
                             <div className="service-btn">
-                                <a className="btn-transparent rn-btn-dark" href="mailto:yy596@cornell.edu"><span className="text">Have questions? Contact Us</span></a>
+                                <a className="btn-transparent rn-btn-dark" href="mailto:hyw2@cornell.edu"><span className="text">Have questions? Contact Us</span></a>
                             </div>
                         </div>
                     </div>

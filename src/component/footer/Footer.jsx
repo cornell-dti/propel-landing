@@ -16,7 +16,7 @@ class Footer extends Component{
                             <div className="col-lg-6">
                                 <div className="footer-left">
                                     <div className="inner">
-                                        <span>Deadline: Feb 21 at 11:59 PM</span>
+                                        <span>Deadline: Feb 19 at 11:59 PM</span>
                                         <h2>Become a <br /> Propellian</h2>
                                         <a className="rn-button-style--2" href="https://form.typeform.com/to/rfHgzqHz">
                                             <span>Apply Now</span>
