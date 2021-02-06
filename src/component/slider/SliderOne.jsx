@@ -4,7 +4,7 @@ import ServiceOne from "../../elements/service/ServiceOne";
 class SliderOne extends Component {
   render() {
     return (
-        <div className="slider-activation">
+        <div className="slider-activation active-dark">
             {/* Start Single Slide */}
             <div className="slide slide-style-1 slider-fixed--height d-flex align-items-center bg_image bg_image--1" data-black-overlay="6">
                 <div className="container position-relative">

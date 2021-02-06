@@ -6,19 +6,15 @@ import Footer from "../component/footer/Footer";
 
 import SliderOne from "../component/slider/SliderOne";
 import ServiceTwo from "../elements/service/ServiceTwo";
-import CounterOne from "../elements/counters/CounterOne";
 import Testimonial from "../elements/Testimonial";
 import About from "../component/HomeLayout/homeOne/About";
-import Portfolio from "../component/HomeLayout/homeOne/Portfolio";
-import BlogContent from "../elements/blog/BlogContent";
-import BrandTwo from "../elements/BrandTwo";
 import Helmet from "../component/common/Helmet";
 
 class MainDemo extends Component{
     render(){
         // const PostList = BlogContent.slice(0 , 3);
         return(
-            <div className="active-dark"> 
+            <div> 
                 <Helmet pageTitle="DTI Propel" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" useNavLinks={false} />
 
@@ -29,7 +25,7 @@ class MainDemo extends Component{
                 {/* End Slider Area   */}
 
                 {/* Start About Area */}
-                <div className="about-area about-position-top pb--120 bg_color--1">
+                <div className="about-area about-position-top pb--120 bg-white">
                     <About />
                 </div>
                 {/* End About Area */}
@@ -48,6 +44,9 @@ class MainDemo extends Component{
                         <Portfolio />
                     </div>
                 </div> */}
+                <div className="testimonial-thumb-wrapper pb--120 pt--120">
+                  <Testimonial />
+                </div>
                 {/* End Portfolio Area */}
 
                 {/* End Brand Area */}
