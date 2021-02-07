@@ -32,7 +32,7 @@ class About extends Component{
                                         <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                             <div className="about-us-list">
                                                 <h3 className="title">How we work</h3>
-                                                <p>Applicants will work interdisciplinary in groups of 2-4 on a project for the semester in developing their technical and entrepreneurial skills.</p>
+                                                <p>Applicants will work interdisciplinary in groups of 1-4 on a project for the semester in developing their technical and entrepreneurial skills.</p>
                                             </div>
                                         </div>
                                     </div>
