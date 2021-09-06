@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import { FiX , FiMenu } from "react-icons/fi";
+import { FiX, FiMenu } from "react-icons/fi";
 
 
-class Header extends Component{
+class Header extends Component {
     constructor(props) {
         super(props);
         this.menuTrigger = this.menuTrigger.bind(this);
         this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
-       //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-        window.addEventListener('load', function() {
+        //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
+        window.addEventListener('load', function () {
             console.log('All assets are loaded')
         })
     }
@@ -23,97 +23,97 @@ class Header extends Component{
     }
 
 
-    render(){
+    render() {
         var elements = document.querySelectorAll('.has-droupdown > a');
-        for(var i in elements) {
-            if(elements.hasOwnProperty(i)) {
-                elements[i].onclick = function() {
+        for (var i in elements) {
+            if (elements.hasOwnProperty(i)) {
+                elements[i].onclick = function () {
                     this.parentElement.querySelector('.submenu').classList.toggle("active");
                     this.classList.toggle("open");
                 }
             }
         }
-        const { logo, color='default-color' } = this.props;
+        const { logo, color = 'default-color' } = this.props;
         let logoUrl;
-        if(logo === 'light'){
+        if (logo === 'light') {
             logoUrl = <img src="/assets/images/logo/logo-light.png" alt="Digital Agency" />;
-        }else if(logo === 'dark'){
+        } else if (logo === 'dark') {
             logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />;
-        }else if(logo === 'symbol-dark'){
+        } else if (logo === 'symbol-dark') {
             logoUrl = <img src="/assets/images/logo/logo-symbol-dark.png" alt="Digital Agency" />;
-        }else if(logo === 'symbol-light'){
+        } else if (logo === 'symbol-light') {
             logoUrl = <img src="/assets/images/logo/logo-symbol-light.png" alt="Digital Agency" />;
-        }else{
+        } else {
             logoUrl = <img src="/assets/images/logo/logo.png" width="240" alt="Digital Agency" />;
         }
 
         let navLinks = (<nav className="mainmenunav d-lg-block">
-          <ul className="mainmenu">
-              <li className="has-droupdown"><Link to="#">Home</Link>
-                  <ul className="submenu">
-                      <li><Link to="/main-demo">Main Demo</Link></li>
-                      <li><Link to="/dark-main-demo">Main Demo Dark</Link></li>
-                      <li><Link to="/creative-agency">Creative Agency</Link></li>
-                      <li><Link to="/creative-landing">Creative One Page</Link></li>
-                      <li><Link to="/creative-portfolio">Creative Portfolio</Link></li>
-                      <li><Link to="/personal-portfolio">Personal Portfolio</Link></li>
-                      <li><Link to="/portfolio-landing">Portfolio One Page</Link></li>
-                      <li><Link to="/dark-portfolio-landing">Portfolio One Page 02</Link></li>
-                      <li><Link to="/digital-agency">Digital Agency</Link></li>
-                      <li><Link to="/startup">Startup</Link></li>
-                      <li><Link to="/paralax">Paralax</Link></li>
-                      <li><Link to="/portfolio-home">Minimal Portfolio</Link></li>
-                      <li><Link to="/business">Business</Link></li>
-                      <li><Link to="/home-particles">Home Particles</Link></li>
-                      <li><Link to="/studio-agency">Studio Agency</Link></li>
-                      <li><Link to="/designer-portfolio">Designer Portfolio</Link></li>
-                  </ul>
-              </li>
-              <li className="has-droupdown"><Link to="/service" >Service</Link>
-                  <ul className="submenu">
-                      <li><Link to="/service">Service</Link></li>
-                      <li><Link to="/service-details">Service Details</Link></li>
-                  </ul>
-              </li>
-              <li><Link to="/about" >About</Link></li>
+            <ul className="mainmenu">
+                <li className="has-droupdown"><Link to="#">Home</Link>
+                    <ul className="submenu">
+                        <li><Link to="/main-demo">Main Demo</Link></li>
+                        <li><Link to="/dark-main-demo">Main Demo Dark</Link></li>
+                        <li><Link to="/creative-agency">Creative Agency</Link></li>
+                        <li><Link to="/creative-landing">Creative One Page</Link></li>
+                        <li><Link to="/creative-portfolio">Creative Portfolio</Link></li>
+                        <li><Link to="/personal-portfolio">Personal Portfolio</Link></li>
+                        <li><Link to="/portfolio-landing">Portfolio One Page</Link></li>
+                        <li><Link to="/dark-portfolio-landing">Portfolio One Page 02</Link></li>
+                        <li><Link to="/digital-agency">Digital Agency</Link></li>
+                        <li><Link to="/startup">Startup</Link></li>
+                        <li><Link to="/paralax">Paralax</Link></li>
+                        <li><Link to="/portfolio-home">Minimal Portfolio</Link></li>
+                        <li><Link to="/business">Business</Link></li>
+                        <li><Link to="/home-particles">Home Particles</Link></li>
+                        <li><Link to="/studio-agency">Studio Agency</Link></li>
+                        <li><Link to="/designer-portfolio">Designer Portfolio</Link></li>
+                    </ul>
+                </li>
+                <li className="has-droupdown"><Link to="/service" >Service</Link>
+                    <ul className="submenu">
+                        <li><Link to="/service">Service</Link></li>
+                        <li><Link to="/service-details">Service Details</Link></li>
+                    </ul>
+                </li>
+                <li><Link to="/about" >About</Link></li>
 
-              <li className="has-droupdown"><Link to="#pages" >Pages</Link>
-                  <ul className="submenu">
-                      <li><Link to="/blog">Blog List</Link></li>
-                      <li><Link to="/blog-details">Blog Details</Link></li>
-                      <li><Link to="/service">Service</Link></li>
-                      <li><Link to="/service-details">Service Details</Link></li>
-                      <li><Link to="/portfolio">Portfolio</Link></li>
-                      <li><Link to="/portfolio-details">Portfolio Details</Link></li>
-                      <li><Link to="/404">404</Link></li>
-                  </ul>
-              </li>
-              <li className="has-droupdown"><Link to="#" >Blocks</Link>
-                  <ul className="submenu">
-                      <li><Link to="/portfolio">Portfolio</Link></li>
-                      <li><Link to="/team">Team</Link></li>
-                      <li><Link to="/service">Service</Link></li>
-                      <li><Link to="/video-popup">Video Popup</Link></li>
-                      <li><Link to="/progressbar">Progressbar</Link></li>
-                      <li><Link to="/gallery">Gallery</Link></li>
-                      <li><Link to="/counters">Counters</Link></li>
-                      <li><Link to="/blog">Blog List</Link></li>
-                      <li><Link to="/clint-logo">Clint Logo</Link></li>
-                      <li><Link to="/contact-form">Contact Form</Link></li>
-                      <li><Link to="/google-map">Google Map</Link></li>
-                      <li><Link to="/columns">Columns</Link></li>
-                      <li><Link to="/pricing-table">Pricing Table</Link></li>
-                  </ul>
-              </li>
-              <li><Link to="/contact" >Contact</Link></li>
-          </ul>
-      </nav>)
-      
+                <li className="has-droupdown"><Link to="#pages" >Pages</Link>
+                    <ul className="submenu">
+                        <li><Link to="/blog">Blog List</Link></li>
+                        <li><Link to="/blog-details">Blog Details</Link></li>
+                        <li><Link to="/service">Service</Link></li>
+                        <li><Link to="/service-details">Service Details</Link></li>
+                        <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/portfolio-details">Portfolio Details</Link></li>
+                        <li><Link to="/404">404</Link></li>
+                    </ul>
+                </li>
+                <li className="has-droupdown"><Link to="#" >Blocks</Link>
+                    <ul className="submenu">
+                        <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/team">Team</Link></li>
+                        <li><Link to="/service">Service</Link></li>
+                        <li><Link to="/video-popup">Video Popup</Link></li>
+                        <li><Link to="/progressbar">Progressbar</Link></li>
+                        <li><Link to="/gallery">Gallery</Link></li>
+                        <li><Link to="/counters">Counters</Link></li>
+                        <li><Link to="/blog">Blog List</Link></li>
+                        <li><Link to="/clint-logo">Clint Logo</Link></li>
+                        <li><Link to="/contact-form">Contact Form</Link></li>
+                        <li><Link to="/google-map">Google Map</Link></li>
+                        <li><Link to="/columns">Columns</Link></li>
+                        <li><Link to="/pricing-table">Pricing Table</Link></li>
+                    </ul>
+                </li>
+                <li><Link to="/contact" >Contact</Link></li>
+            </ul>
+        </nav>)
+
         if (this.props.useNavLinks === false) {
-          navLinks = null;
+            navLinks = null;
         }
-        
-        return(
+
+        return (
             <header className={`header-area formobile-menu header--transparent ${color}`}>
                 <div className="header-wrapper" id="header-wrapper">
                     <div className="header-left">
@@ -126,8 +126,8 @@ class Header extends Component{
                     <div className="header-right">
                         {navLinks}
                         <div className="header-btn">
-                            <a className="rn-btn" href="https://form.typeform.com/to/rfHgzqHz">
-                                <span>Apply for the S21 cohort</span>
+                            <a className="rn-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSco5Phck0Pg2sT4g0aWCjta78dVGARrgAFGsjIu60uCM9uTpw/viewform?usp=sf_link" target="_blank">
+                                <span>Apply for the F21 cohort</span>
                             </a>
                         </div>
                         {/* Start Humberger Menu  */}

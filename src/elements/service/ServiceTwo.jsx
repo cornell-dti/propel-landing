@@ -24,11 +24,11 @@ const ServiceList = [
     }
 ]
 
-class ServiceTwo extends Component{
-    render(){
+class ServiceTwo extends Component {
+    render() {
         let title = 'Rocket Fuel',
-        description = 'Here\'s how Propel plans on helping you launch your product.';
-        return(
+            description = 'Here\'s how Propel plans on helping you launch your product.';
+        return (
             <React.Fragment>
                 <div className="row">
                     <div className="col-lg-4 col-12">
@@ -36,13 +36,13 @@ class ServiceTwo extends Component{
                             <h2 className="title">{title}</h2>
                             <p>{description}</p>
                             <div className="service-btn">
-                                <a className="btn-transparent rn-btn-dark" href="mailto:hyw2@cornell.edu"><span className="text">Have questions? Contact Us</span></a>
+                                <a className="btn-transparent rn-btn-dark" href="mailto:ac2677@cornell.edu"><span className="text">Have questions? Contact Us</span></a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-8 col-12 mt_md--50">
                         <div className="row service-one-wrapper">
-                            {ServiceList.map( (val , i) => (
+                            {ServiceList.map((val, i) => (
                                 <div className="col-lg-6 col-md-6 col-sm-6 col-12" key={i}>
                                     <a>
                                         <div className="service service__style--2">

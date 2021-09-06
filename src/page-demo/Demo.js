@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from "react";
+import React, { Component, Fragment } from "react";
 import ScrollToTop from 'react-scroll-up';
 import Particles from 'react-particles-js';
 import {
@@ -28,42 +28,42 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const featureList = [
     {
-        icon: <FaReact/>,
+        icon: <FaReact />,
         title: 'Latest React 16.8+',
         subtitle: 'We used latest react vertion ^16.8.6.Its a awesome design made by react.'
     },
     {
-        icon: <FiSmartphone/>,
+        icon: <FiSmartphone />,
         title: 'Perfect Responsive',
         subtitle: 'Our Template is full Perfect for all device. You can visit our template all device easily.'
     },
     {
-        icon: <FiCode/>,
+        icon: <FiCode />,
         title: 'Well Documented Codes',
         subtitle: 'The Trydo code is awesome well documented code. And Its customization is very easily'
     },
     {
-        icon: <FaSass/>,
+        icon: <FaSass />,
         title: 'Sass Available',
         subtitle: 'The tamplate has Sass available for css. You can Change css by sass'
     },
     {
-        icon: <FiDownload/>,
+        icon: <FiDownload />,
         title: 'Fast Loading Speed',
         subtitle: 'Trydo is faster loading speed.Trydo create your theme so much faster '
     },
     {
-        icon: <FiCommand/>,
+        icon: <FiCommand />,
         title: 'Modern Design',
         subtitle: 'Trydo is a modern creatuve design for Creative Agency , Personal Portfolio etc....'
     },
     {
-        icon: <FiHeadphones/>,
+        icon: <FiHeadphones />,
         title: '24 Support System',
         subtitle: 'We are provide 24 hours support for all clients.You can purchase without hesitation.'
     },
     {
-        icon: <FiBold/>,
+        icon: <FiBold />,
         title: 'Bootstrap Comfortable',
         subtitle: 'Bootstrap comfortable is available in trydo. So layout changes is so much easily'
     }
@@ -200,7 +200,7 @@ const singleDemo = [
         title: 'Studio Agency',
         description: 'It has been used background video and vedio popup.You can use it for all kinds of agencies studio.',
         label: ''
-    
+
     },
     {
         url: '#comingsoon',
@@ -387,7 +387,7 @@ const portfolioList = [
         description: 'It comes with landing page feature. This tamplate you can be used for your Personal useses,  Freelancer, Designer, and Developer etc.',
         label: 'New'
     },
-    
+
 
 
 ]
@@ -553,7 +553,7 @@ class Demo extends Component {
             <Fragment>
                 {/* Start Banner Area  */}
                 <div className="prv-banner-wrapper"
-                     style={{backgroundImage: `url("assets/images/preview/preview-bg.jpg")`}}>
+                    style={{ backgroundImage: `url("assets/images/preview/preview-bg.jpg")` }}>
                     <div className="container-fluid">
                         <div className="plr--120">
                             <div className="row">
@@ -561,7 +561,7 @@ class Demo extends Component {
                                     <div className="inner">
                                         <div className="logo text-left">
                                             <a href="/">
-                                                <img src="/assets/images/logo/logo-all-dark.png" alt="Trydo Images"/>
+                                                <img src="/assets/images/logo/logo-all-dark.png" alt="Trydo Images" />
                                             </a>
                                         </div>
                                         <p className="title">Welcome to TryDO React Creative Agency, React Portfolio and Corporate Multi Purpose Template Built With React JS. NO jQuery!</p>
@@ -588,7 +588,7 @@ class Demo extends Component {
                                 <div className="col-lg-12">
                                     <div className="section-title text-center pb--30">
                                         <h2 className="theme-gradient">Home Demo</h2>
-                                        <p>Choose one of styles or cutomize easily your site following your ideas. <br/> More
+                                        <p>Choose one of styles or cutomize easily your site following your ideas. <br /> More
                                             demos are coming soon.</p>
                                     </div>
                                 </div>
@@ -608,14 +608,14 @@ class Demo extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <TabPanel className="row">
-                                    {singleDemo.map((value , index) => (
+                                    {singleDemo.map((value, index) => (
                                         // Start Single Demo 
                                         <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="single-demo">
                                                 <a target="_blank" rel="noopener noreferrer" href={`/${value.url} `}>
-                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images"/>
+                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images" />
                                                     <h3 className="title">{value.title}</h3>
                                                     <p className="info">{value.description}</p>
                                                     {value.label ? <div className="label-new"><span>{value.label}</span></div> : ''}
@@ -627,12 +627,12 @@ class Demo extends Component {
                                 </TabPanel>
 
                                 <TabPanel className="row">
-                                    {agencyDemo.map((value , index) => (
+                                    {agencyDemo.map((value, index) => (
                                         // Start Single Demo 
                                         <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="single-demo">
                                                 <a target="_blank" rel="noopener noreferrer" href={`/${value.url} `}>
-                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images"/>
+                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images" />
                                                     <h3 className="title">{value.title}</h3>
                                                     <p className="info">{value.description}</p>
                                                     {value.label ? <div className="label-new"><span>{value.label}</span></div> : ''}
@@ -644,12 +644,12 @@ class Demo extends Component {
                                 </TabPanel>
 
                                 <TabPanel className="row">
-                                    {busenessDemo.map((value , index) => (
+                                    {busenessDemo.map((value, index) => (
                                         // Start Single Demo 
                                         <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="single-demo">
                                                 <a target="_blank" rel="noopener noreferrer" href={`/${value.url} `}>
-                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images"/>
+                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images" />
                                                     <h3 className="title">{value.title}</h3>
                                                     <p className="info">{value.description}</p>
                                                     {value.label ? <div className="label-new"><span>{value.label}</span></div> : ''}
@@ -661,12 +661,12 @@ class Demo extends Component {
                                 </TabPanel>
 
                                 <TabPanel className="row">
-                                    {portfolioList.map((value , index) => (
+                                    {portfolioList.map((value, index) => (
                                         // Start Single Demo 
                                         <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="single-demo">
                                                 <a target="_blank" rel="noopener noreferrer" href={`/${value.url} `}>
-                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images"/>
+                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images" />
                                                     <h3 className="title">{value.title}</h3>
                                                     <p className="info">{value.description}</p>
                                                     {value.label ? <div className="label-new"><span>{value.label}</span></div> : ''}
@@ -678,12 +678,12 @@ class Demo extends Component {
                                 </TabPanel>
 
                                 <TabPanel className="row">
-                                    {landingPage.map((value , index) => (
+                                    {landingPage.map((value, index) => (
                                         // Start Single Demo 
                                         <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="single-demo">
                                                 <a target="_blank" rel="noopener noreferrer" href={`/${value.url} `}>
-                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images"/>
+                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images" />
                                                     <h3 className="title">{value.title}</h3>
                                                     <p className="info">{value.description}</p>
                                                     {value.label ? <div className="label-new"><span>{value.label}</span></div> : ''}
@@ -695,12 +695,12 @@ class Demo extends Component {
                                 </TabPanel>
 
                                 <TabPanel className="row">
-                                    {newDemoList.map((value , index) => (
+                                    {newDemoList.map((value, index) => (
                                         // Start Single Demo 
                                         <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                             <div className="single-demo">
                                                 <a target="_blank" rel="noopener noreferrer" href={`/${value.url} `}>
-                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images"/>
+                                                    <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images" />
                                                     <h3 className="title">{value.title}</h3>
                                                     <p className="info">{value.description}</p>
                                                     {value.label ? <div className="label-new"><span>{value.label}</span></div> : ''}
@@ -729,12 +729,12 @@ class Demo extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                {innerDemo.map((value , index) => (
+                                {innerDemo.map((value, index) => (
                                     // Start Single Demo
                                     <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12">
                                         <div className="single-demo">
                                             <a target="_blank" rel="noopener noreferrer" href={`/${value.url} `}>
-                                                <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images"/>
+                                                <img src={`/assets/images/preview/${value.imageUrl}`} alt="Creative Agency Images" />
                                                 <h3 className="title">{value.title}</h3>
                                             </a>
                                         </div>
@@ -777,7 +777,7 @@ class Demo extends Component {
                     </div>
                     {/* End Feature Area  */}
 
-                     {/* Start Faq Area */}
+                    {/* Start Faq Area */}
                     <div className="pv-feaq-area bg_color--3 ptb--120">
                         <div className="container">
                             <div className="row">
@@ -888,15 +888,15 @@ class Demo extends Component {
                                                     </p>
                                                 </AccordionItemPanel>
                                             </AccordionItem>
-                                          
+
                                         </Accordion>
                                     </div>
                                 </div>
                             </div>
-                        </div>        
+                        </div>
                     </div>
-                     {/* Start Faq Area */}
-                                    
+                    {/* Start Faq Area */}
+
 
                     {/* Start Footer Area  */}
                     <footer className="call-to-action-wrapper text-white-wrapper call-to-action ptb--120 with-particles">
